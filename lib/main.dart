@@ -44,14 +44,16 @@ class MyApp extends StatelessWidget {
               Expanded(
                 child: Stack(
                   children: [
-                    Image.asset('assets/images/toons.png'),
+                    Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Image.asset('assets/images/toons.png')),
                     Container(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.center,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Color(0xFFFF4B3A).withAlpha(50),
+                            Color(0x11FF4B3A),
                             Color(0xFFFF4B3A),
                           ],
                         ),
