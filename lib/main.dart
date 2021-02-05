@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/foodie_button.dart';
 
 void main() {
   runApp(
@@ -67,16 +68,8 @@ class MyApp extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                   horizontal: 50,
                 ),
-                child: FlatButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  textColor: Color(0xFFFF4B3A),
-                  height: 70,
-                  minWidth: double.infinity,
-                  color: Colors.white,
-                  child: Text('Get Started'),
-                  onPressed: () {},
+                child: FoodieButton(
+                  title: 'Get Started',
                 ),
               ),
             ],
